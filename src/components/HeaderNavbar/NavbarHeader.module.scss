@@ -1,0 +1,94 @@
+.nav {
+  display: block;
+  text-align: center;
+  width:  498px;
+
+  :last-child{
+    margin-right: 0px;
+  }
+
+  @media (max-width: 1024px) {
+    width: 450px;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+    .hoverable{
+      display:inline-block;
+      backface-visibility: hidden;
+      vertical-align: middle;
+      position:relative;
+      opacity: 0.75;
+      box-shadow: 0 0 1px rgba(0,0,0,0);
+      transform: translateZ(0);
+      transition-duration: .3s;
+      transition-property:transform;
+    }
+    
+    .hoverable:before{
+      position:absolute;
+      pointer-events: none;
+      z-index:-1;
+      content: '';
+      top: 200%;
+      left: 5%;
+      height:10px;
+      width:90%;
+      opacity:0;
+      background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+      background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+      transition-duration: 0.3s;
+      transition-property: transform, opacity;
+
+      @media (max-width: 480px) {
+        top: 150%;
+      }
+    }
+    
+    .hoverable:hover, .hoverable:active, .hoverable:focus{
+      color: white;
+      opacity: 1;
+      transform: translateY(-5px);
+    }
+    .hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+      color: white;
+      opacity: 1;
+      transform: translateY(-5px);
+    }
+    
+  text-transform:uppercase;
+
+    a{
+      transition: .5s color ease-in-out;
+
+      margin-right: 37px;
+      @media (max-width: 480px) {
+        width: 100%;
+        margin: 15px 0;
+
+        text-align: center;
+      }
+    }
+
+  a.active{
+    opacity: 1;
+    color: white;
+  }  
+  a.active:after{
+    position:absolute;
+    z-index:-1;
+    content: '';
+    top: 200%;
+    left: 5%;
+    height:10px;
+    width:90%;
+    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    color: white;
+    @media (max-width: 480px) {
+      top: 150%;
+    }
+  }
+
+}

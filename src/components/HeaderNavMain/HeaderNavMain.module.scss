@@ -1,0 +1,67 @@
+.HeaderNavMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  padding: 0 15%;
+
+  @media (max-width: 1024px) {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 5px 5px; 
+  grid-template-areas: 
+    "logo phone"
+    "nav nav"; 
+
+    padding: 15px;
+  }
+
+  @media (max-width: 480px){
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-areas: 
+      "logo logo"
+      "phone phone"
+      "nav nav"; 
+
+      height: 320px;
+  }
+  .logo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: #F2F2F2;
+    @media (max-width: 1024px){
+      grid-area: logo;
+    }
+
+    @media (max-width: 480px){
+      text-align: center;
+    margin-bottom: 15px;
+    }
+  }
+  
+  .nav{
+    @media (max-width: 1024px){
+      grid-area: nav;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .phone{
+    display: flex;
+    align-items: center;
+    @media (max-width: 1024px){
+      grid-area: phone;
+      display: flex;
+      justify-content: center;
+    }
+    p{
+      margin-left: 10px;
+      margin-bottom: 0;
+    }
+  }
+}

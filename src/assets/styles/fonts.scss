@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Montserrat';
+
+  src:  url('../fonts/Montserrat-Bold.woff2') format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff'); 
+  font-style: normal; 
+  font-weight: 700; 
+  } 
+
+@font-face {
+  font-family: 'Montserrat';
+  src:  url('../fonts/Montserrat-Medium.woff2') format('woff2'), url('../fonts/Montserrat-Medium.woff') format('woff'); 
+  font-style: normal; 
+  font-weight: 500; 
+  } 
+
+@font-face {
+    font-family: 'Courier Prime';
+    src:  url('../fonts/CourierPrime-Bold.woff2') format('woff2'), url('../fonts/CourierPrime-Bold.woff') format('woff'); 
+    font-style: normal; 
+    font-weight: 700; 
+    }
+    @font-face {
+      font-family: 'Courier Prime';
+      src:  url('../fonts/CourierPrime-Regular.woff2') format('woff2'), url('../fonts/CourierPrime-Regular.woff') format('woff'); 
+      font-style: normal; 
+      font-weight: 400; 
+      } 

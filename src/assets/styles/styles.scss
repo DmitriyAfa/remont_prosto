@@ -1,0 +1,53 @@
+@mixin subtitle {
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    color: #DFD1A7;
+}
+
+@mixin subtitle2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #F2F2F2;
+}
+
+@mixin content {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: #E5E5E5;
+}
+
+@mixin subtitleImportant {
+  font-family: 'Montserrat' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 140% !important;
+  color: #DFD1A7 !important;
+}
+
+@mixin subtitleImportant2 {
+  font-family: 'Montserrat' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 140% !important;
+  color: #F2F2F2 !important;
+}
+
+@mixin contentImportant {
+  font-family: 'Courier New' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 160% !important;
+  color: #E5E5E5 !important;
+}

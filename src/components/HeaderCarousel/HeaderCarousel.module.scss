@@ -1,0 +1,79 @@
+.card{
+
+  height: 570px;
+  .content{
+    position: absolute;
+
+    height: 100%;
+    z-index: 6;
+    top: 75px;
+    width: 650px;
+    margin-left: 15%;
+
+    @media(max-width: 768px){
+      width: 300px;
+    }
+
+    @media(max-width: 480px){
+      margin-left: 5%;
+    }
+
+
+    h1{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: #F2F2F2;
+
+      @media(max-width: 768px){
+        font-size: 28px;
+      }
+    }
+
+    p{
+      font-family: 'Courier New';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 140%;
+      color: #BBBCBC;
+
+      @media(max-width: 768px){
+        font-size: 12px;
+      }
+    }
+  }
+  .background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+  
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 414.04%), #CDA177;
+    mix-blend-mode: multiply;
+
+  }
+
+  .b1, .b2, .b3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center center;      
+    background-repeat: no-repeat;        
+    background-size: cover;
+    z-index: 1;
+  }
+  .b1{
+    background-image: url('../../assets/image/Header/3.jpeg');
+  }
+  .b2{
+    background-image: url('../../assets/image/Header/1.jpeg');
+  }
+  .b3{
+    background-image: url('../../assets/image/Header/2.jpeg');
+  }
+
+}
