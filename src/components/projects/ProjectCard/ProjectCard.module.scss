@@ -1,0 +1,43 @@
+@import '../../../assets/styles/styles.scss';
+
+.card{
+  display: grid;
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 25px 25px; 
+  grid-template-areas: 
+    "img content";
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 50px 0;
+
+  padding: 0 0 50px 0;
+
+  @media (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img{
+    grid-area: img;
+    width: 100%;
+    @media (max-width: 768px){
+      margin-bottom: 15px;
+    }
+  }
+  .content{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3{
+      @include subtitleImportant2
+    }
+
+    .link{
+      color: #DFD1A7 !important;
+      text-decoration: dashed !important;
+    }
+  }
+}

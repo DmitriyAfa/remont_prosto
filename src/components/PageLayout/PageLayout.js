@@ -1,12 +1,12 @@
 import styles from "./PageLayout.module.scss";
 import imgArrowLeft from "../../assets/image/FourthSectionMain/ArrowLeft.png";
 import { Link } from "react-router-dom";
-export const PageLayout = ({ header, children }) => {
+export const PageLayout = ({ header, to, toContent, children }) => {
   return (
     <div className={styles.PageLayout}>
       <div className={styles.header}>
         <h2>{header}</h2>
-        <Link to="/" className={styles.link}>
+        <Link to={to} className={styles.link}>
           <span>
             <img
               className={styles.left}
@@ -15,7 +15,7 @@ export const PageLayout = ({ header, children }) => {
               width={30}
               height={10}
             />
-            <p> На главную</p>
+            <p>{toContent}</p>
           </span>
         </Link>
       </div>

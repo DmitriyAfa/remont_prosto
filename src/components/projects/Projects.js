@@ -1,21 +1,23 @@
 import styles from "./Projects.module.scss";
-// import FirstSectionMain from "./FirstSectionMain/FirstSectionMain";
-// import SecondSectionMain from "./SecondSectionMain/SecondSectionMain";
-// import ThirdSectionMain from "./ThirdSectionMain/ThirdSectionMain";
-// import FourthSectionMain from "./FourthSectionMain/FourthSectionMain";
-// import FifthSectionMain from "./FifthSectionMain/FifthSectionMain";
-// import SixthSectionMain from "./SixthSectionMain/SixthSectionMain";
 import { PageLayout } from "../PageLayout/PageLayout";
+import { ProjectCard } from "./ProjectCard/ProjectCard";
+import { projectCardConsts } from "../../assets/constans/constans";
+
 export const ProjectsMain = () => {
+  const cards = projectCardConsts.map((card, id) => (
+    <ProjectCard
+      key={card.to + id}
+      src={card.src}
+      header={card.header}
+      to={card.to}
+      content={card.content}
+    />
+  ));
   return (
     <div className={styles.wrapper}>
-      {/* <FirstSectionMain />
-      <SecondSectionMain />
-      <ThirdSectionMain />
-      <FourthSectionMain />
-      <FifthSectionMain />
-      <SixthSectionMain /> */}
-      <PageLayout header={"Проекты"} />
+      <PageLayout header={"Проекты"} to={"/"} toContent="На главную">
+        {cards}
+      </PageLayout>
     </div>
   );
 };
