@@ -1,4 +1,4 @@
-@import '../../assets//styles/styles.scss';
+@import '../../../assets//styles/styles.scss';
 .footer {
   display: grid;
   grid-auto-columns: 1fr; 
@@ -49,6 +49,7 @@
     }
     .phone{
       display: flex;
+      justify-content: center;
       @media(max-width: 768px){
       justify-content: center;
       }

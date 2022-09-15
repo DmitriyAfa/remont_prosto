@@ -1,8 +1,8 @@
 import styles from "./FooterApp.module.scss";
 import FooterNavbar from "../FooterNavbar/FooterNavbar";
-import icon from "../../assets/image/icons/phone-call.png";
-import iconVK from "../../assets/image/icons/vk.png";
-import iconT from "../../assets/image/icons/telegram.png";
+import icon from "../../../assets/image/icons/phone-call.png";
+import iconVK from "../../../assets/image/icons/vk.png";
+import iconT from "../../../assets/image/icons/telegram.png";
 
 export const FooterApp = () => {
   return (

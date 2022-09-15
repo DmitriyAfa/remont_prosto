@@ -1,6 +1,6 @@
 import styles from "./HeaderNavMain.module.scss";
 import HeaderNavbar from "../HeaderNavbar/HeaderNavbar";
-import icon from "../../assets/image/icons/phone-call.png";
+import icon from "../../../assets/image/icons/phone-call.png";
 const HeaderNavMain = () => {
   return (
     <>

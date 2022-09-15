@@ -1,6 +1,6 @@
 import styles from "./NavbarHeader.module.scss";
 import { Link, useLocation } from "react-router-dom";
-import { navbarHeaderConsts } from "../../assets/constans/constans";
+import { navbarHeaderConsts } from "../../../assets/constans/constans";
 const { navbarConst } = navbarHeaderConsts;
 const NavbarHeader = () => {
   const { pathname } = useLocation();

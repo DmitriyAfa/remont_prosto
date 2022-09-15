@@ -1,6 +1,6 @@
 import styles from "./FooterNavbar.module.scss";
 import { Link, useLocation } from "react-router-dom";
-import { navbarFooterConsts } from "../../assets/constans/constans";
+import { navbarFooterConsts } from "../../../assets/constans/constans";
 const { navbarConst, navbarConst2, navbarConst3 } = navbarFooterConsts;
 
 const FooterNavbar = () => {

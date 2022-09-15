@@ -1,0 +1,49 @@
+@import '../../../assets/styles/styles.scss';
+.wrapper{
+  display: grid;
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 5px 20px; 
+  grid-template-areas: 
+    "title s1"
+    "title s2"
+    "title s3"
+    "title s4"
+    "title s5";
+
+    @media(max-width: 480px){
+      grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr; 
+      grid-template-areas: 
+        "title title"
+        "s1 s1"
+        "s2 s2"
+        "s3 s3"
+        "s4 s4"
+        "s5 s5";
+    }
+
+  .title{
+    grid-area: title;
+    @include subtitle;
+  }
+  .s1, .s2, .s3, .s4, .s5{
+    @include content;
+  }
+  .s1{
+    grid-area: s1;
+  }
+  .s2{
+    grid-area: s2;
+  }
+  .s3{
+    grid-area: s3;
+  }
+  .s4{
+    grid-area: s4;
+  }
+  .s5{
+    grid-area: s5;
+  }
+
+}
