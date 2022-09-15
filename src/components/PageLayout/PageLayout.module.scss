@@ -1,0 +1,41 @@
+.PageLayout{
+  margin: 60px 0;
+  padding: 0 22%;
+
+  @media(max-width: 768px){
+    padding: 0 7.5%;
+  }
+  @media(max-width: 480px){
+    margin-top: 100px;
+  }
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+
+    @media(max-width: 768px){
+      width: 100%;
+    }
+
+    .link{
+      img{
+        margin-right: 10px;
+      }
+      span{
+        display: flex;
+        align-items: center;
+        p{
+          margin: 0;
+        }
+      }
+    }
+  }
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+}

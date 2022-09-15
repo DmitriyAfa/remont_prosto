@@ -5,6 +5,7 @@ import styles from "./Projects.module.scss";
 // import FourthSectionMain from "./FourthSectionMain/FourthSectionMain";
 // import FifthSectionMain from "./FifthSectionMain/FifthSectionMain";
 // import SixthSectionMain from "./SixthSectionMain/SixthSectionMain";
+import { PageLayout } from "../PageLayout/PageLayout";
 export const ProjectsMain = () => {
   return (
     <div className={styles.wrapper}>
@@ -14,6 +15,7 @@ export const ProjectsMain = () => {
       <FourthSectionMain />
       <FifthSectionMain />
       <SixthSectionMain /> */}
+      <PageLayout header={"Проекты"} />
     </div>
   );
 };
