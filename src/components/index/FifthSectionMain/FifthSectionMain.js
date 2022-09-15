@@ -1,8 +1,8 @@
 import styles from "./FifthSectionMain.module.scss";
-import LayoutHeader from "../LayoutHeader/LayoutHeader";
+import SectionLayout from "../../SectionLayout/SectionLayout";
 const FifthSectionMain = () => {
   return (
-    <LayoutHeader header={"ВЫСОКИЙ УРОВЕНЬ И ПРОФЕССИОНАЛЬНАЯ КОМАНДА"}>
+    <SectionLayout header={"ВЫСОКИЙ УРОВЕНЬ И ПРОФЕССИОНАЛЬНАЯ КОМАНДА"}>
       <div className={styles.wrapper}>
         <p className={styles.title}>Чем мы будем вам полезны</p>
         <div className={styles.cards}>
@@ -36,7 +36,7 @@ const FifthSectionMain = () => {
           </div>
         </div>
       </div>
-    </LayoutHeader>
+    </SectionLayout>
   );
 };
 

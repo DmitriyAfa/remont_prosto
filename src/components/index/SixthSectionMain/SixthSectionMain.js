@@ -1,14 +1,14 @@
 import styles from "./SixthSectionMain.module.scss";
-import LayoutHeader from "../LayoutHeader/LayoutHeader";
+import SectionLayout from "../../SectionLayout/SectionLayout";
 import "antd/dist/antd.css";
 import { Collapse } from "antd";
-import { sixthSectionMainConsts } from "../../public/constans/constans";
+import { sixthSectionMainConsts } from "../../../assets/constans/constans";
 const { Panel } = Collapse;
 const { items } = sixthSectionMainConsts;
 
 const SixthSectionMain = () => {
   return (
-    <LayoutHeader header={"Не нашли свой вопрос? Свяжитесь с нами!"}>
+    <SectionLayout header={"Не нашли свой вопрос? Свяжитесь с нами!"}>
       <div className={styles.wrapper}>
         <p className={styles.title}>Чем мы будем вам полезны</p>
         <div className={styles.cards}>
@@ -23,7 +23,7 @@ const SixthSectionMain = () => {
           </Collapse>
         </div>
       </div>
-    </LayoutHeader>
+    </SectionLayout>
   );
 };
 
