@@ -1,6 +1,7 @@
 import styles from "./PageLayout.module.scss";
 import imgArrowLeft from "../../assets/image/FourthSectionMain/ArrowLeft.png";
 import { Link } from "react-router-dom";
+
 export const PageLayout = ({ header, to, toContent, children }) => {
   return (
     <div className={styles.PageLayout}>

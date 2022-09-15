@@ -1,0 +1,27 @@
+@import '../../../assets/styles/styles.scss';
+
+.card{
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 50px 0;
+
+  padding: 0 0 50px 0;
+
+
+  .img{
+    grid-area: img;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .content{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3{
+      @include subtitleImportant2
+    }
+  }
+}

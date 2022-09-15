@@ -1,6 +1,6 @@
-import styles from "./ProjectCard.module.scss";
-import { Link } from "react-router-dom";
-export const ProjectCard = ({ src, header, content, to }) => {
+import styles from "./GalleryLayout.module.scss";
+
+export const GalleryLayout = ({ src, header, content }) => {
   return (
     <div className={styles.card}>
       <img className={styles.img} src={src} alt="Ремонт екатеринбург" />
@@ -9,10 +9,6 @@ export const ProjectCard = ({ src, header, content, to }) => {
           <h3>{header}</h3>
           <p>{content}</p>
         </div>
-
-        <Link to={`/projects/${to}`} className={styles.link}>
-          Подробнее
-        </Link>
       </div>
     </div>
   );

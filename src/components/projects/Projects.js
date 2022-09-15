@@ -4,12 +4,12 @@ import { ProjectCard } from "./ProjectCard/ProjectCard";
 import { projectCardConsts } from "../../assets/constans/constans";
 
 export const ProjectsMain = () => {
-  const cards = projectCardConsts.map((card, id) => (
+  const cards = projectCardConsts.map((card) => (
     <ProjectCard
-      key={card.to + id}
+      key={card.id}
       src={card.src}
       header={card.header}
-      to={card.to}
+      to={card.id}
       content={card.content}
     />
   ));
