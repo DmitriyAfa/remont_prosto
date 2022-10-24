@@ -1,15 +1,16 @@
 import styles from "./GalleryLayout.module.scss";
 
-export const GalleryLayout = ({ src, header, content }) => {
+export const GalleryLayout = ({ images }) => {
   return (
-    <div className={styles.card}>
-      <img className={styles.img} src={src} alt="Ремонт екатеринбург" />
-      <div className={styles.content}>
-        <div>
-          <h3>{header}</h3>
-          <p>{content}</p>
-        </div>
-      </div>
-    </div>
+    <ul className={styles.gallery}>
+      {images &&
+        images.map(({ src }) => {
+          return (
+            <li key={src} className={styles.item}>
+              <img src={src} />
+            </li>
+          );
+        })}
+    </ul>
   );
 };
