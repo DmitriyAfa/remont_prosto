@@ -20,6 +20,27 @@ export const ProjectGallery = () => {
   return (
     <div className={styles.wrapper}>
       <PageLayout header={addresses} to={"/projects"} toContent="К проектам">
+        {cards && <GalleryLayout images={cards} />}
+      </PageLayout>
+    </div>
+  );
+};
+
+/**
+ const [cards, setCards] = useState(null);
+  const { id } = useParams();
+
+  useEffect(() => {
+    const projects = projectGalleryConst.filter((card) => card.id == id);
+    setCards(projects[0].cards);
+  }, [id, projectGalleryConst]);
+
+  const addresses =
+    id == 0 ? "Такой-то адресс" : id == 1 ? "Такой-то адресс №2" : "Адресс";
+
+  return (
+    <div className={styles.wrapper}>
+      <PageLayout header={addresses} to={"/projects"} toContent="К проектам">
         {cards
           ? cards.map((card, id) => (
               <GalleryLayout
@@ -33,4 +54,4 @@ export const ProjectGallery = () => {
       </PageLayout>
     </div>
   );
-};
+ */

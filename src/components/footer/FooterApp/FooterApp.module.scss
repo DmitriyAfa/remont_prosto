@@ -2,7 +2,7 @@
 .footer {
   display: grid;
   grid-auto-columns: 1fr; 
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 100px;
   gap: 5px 10px; 
   grid-template-areas: 
@@ -49,14 +49,12 @@
     }
     .phone{
       display: flex;
-      justify-content: center;
       @media(max-width: 768px){
       justify-content: center;
       }
       @media (max-width: 1024px){
         grid-area: phone;
         display: flex;
-        // justify-content: center;
         align-items: center;
       }
       p{
@@ -70,19 +68,17 @@
     grid-area: contacts;
     display: flex;
     justify-content: flex-end;
-    
-    :first-child{
-      margin-right: 20px;
-    }
 
     @media(max-width: 768px){
       justify-content: center;
     }
 
     a{
+      padding: 0 25px;
       @media(max-width: 768px){
         display: flex;
-    align-items: center;
+    
+        align-items: center;
       }
     }
   }
