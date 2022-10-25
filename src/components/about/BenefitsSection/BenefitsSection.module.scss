@@ -1,0 +1,44 @@
+@import '../../../assets/styles/styles.scss';
+.wrapper{
+  display: grid;
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 2fr 4fr; 
+  gap: 5px 0; 
+  grid-template-areas: 
+    "title cards";
+  padding-top: 60px;
+  .title{
+    @include subtitle;
+
+    @media(max-width: 768px){
+      margin-bottom: 65px;
+    }
+  }
+  
+  @media(max-width: 768px){
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: column;
+
+    .card{
+      
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      
+      margin-bottom: 25px;
+      .subtitle{
+        grid-area: c1;
+        @include subtitle2;
+      }
+      .content{
+        grid-area: c2;
+        @include content;
+      }
+    }
+  }
+
+
+}
