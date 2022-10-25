@@ -11,7 +11,7 @@ export const IndexMain = () => {
     <main className={styles.wrapper}>
       <FirstSection />
       <WhatWeDo data={whatWeDo} />
-      <ThirdSectionMain />
+      {/* <ThirdSectionMain /> */}
       <FourthSectionMain />
       <FifthSectionMain />
       <SixthSectionMain />
