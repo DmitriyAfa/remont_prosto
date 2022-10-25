@@ -5,7 +5,7 @@ export const HeaderApp = () => {
   return (
     <header className={styles.HeaderApp}>
       <HeaderNavMain />
-      <HeaderCarousel />
+      {/* <HeaderCarousel /> */}
     </header>
   );
 };

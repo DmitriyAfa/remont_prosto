@@ -7,17 +7,19 @@
   grid-template-areas: 
     "steps content";
 
-    @media(max-width: 480px){
+    @media(max-width: 1024px){
       display: flex;
       flex-direction: column;
     }
+
   .steps{
     grid-area: steps;
   }  
 
   .content {
     display: flex;
-    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
     grid-area: content;
     @include content;
     
@@ -25,24 +27,19 @@
       flex-direction: column;
     }
     .action{
-      position: absolute;
-      bottom: 40px;
-      margin: 25px 0;
-
-      @media(max-width: 480px){
-        position: relative;
-        bottom: 0;
+      @media(max-width: 1024px){
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px 0;
       }
 
       img{
         cursor: pointer;
+        width: 75px;
+                
       }
       .left{
         margin-right: 15px;
-      }
-
-      span{
-        margin-right: 20px !important;
       }
     }
   }

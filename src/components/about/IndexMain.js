@@ -4,7 +4,6 @@ import SecondSectionMain from "./SecondSectionMain/SecondSectionMain";
 import ThirdSectionMain from "./ThirdSectionMain/ThirdSectionMain";
 import FourthSectionMain from "./FourthSectionMain/FourthSectionMain";
 import BenefitsSection from "./BenefitsSection/BenefitsSection";
-import SixthSectionMain from "./SixthSectionMain/SixthSectionMain";
 import { PageLayout } from "../PageLayout/PageLayout";
 import { benefitsSection } from "./consts";
 export const AboutMain = () => {

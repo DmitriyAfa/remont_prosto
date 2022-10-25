@@ -24,26 +24,18 @@
     display: flex;
     flex-direction: column;
 
-    .s1, .s2, .s3, .s4{
-      display: grid;
-      grid-auto-columns: 1fr; 
-      grid-template-columns: 1fr 3fr;
-      grid-template-rows: 1fr 3fr;
-      gap: 5px 20px; 
-      grid-template-areas: 
-        "c1 c1"
-        "c2 c2";
-      
+    .card{
+      display: flex;
+      flex-direction: column;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      
       margin-bottom: 25px;
-      .c1{
-        grid-area: c1;
+      .subtitle{
         @include subtitle2;
+        margin-bottom: 20px
       }
-      .c2{
-        grid-area: c2;
+      .content{
         @include content;
+        padding-bottom: 20px;
       }
     }
   }
