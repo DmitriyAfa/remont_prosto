@@ -4,23 +4,40 @@
   display: grid;
   grid-auto-columns: 1fr; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
-  gap: 5px 20px; 
+  grid-template-rows: auto; 
+  gap: 20px 20px; 
   grid-template-areas: 
     "title s1"
-    "title s2";
-
+    "img s2";
+  padding-top: 60px;
     @media(max-width: 480px){
-      grid-template-rows: 1fr 2fr 2fr; 
+      grid-template-rows: auto; 
       grid-template-areas: 
         "title title"
+        "img img"
         "s1 s1"
         "s2 s2";
     }
 
+  p{
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+  }
+
   .title{
     grid-area: title;
     @include subtitle;
+    display: block;
+  }
+  .img{
+    grid-area: img;
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
   }
   .s1{
     grid-area: s1;
@@ -28,6 +45,10 @@
   }
   .s2{
     grid-area: s2;
+    @include content;
+  }
+  .s3{
+    grid-area: s3;
     @include content;
   }
 }
