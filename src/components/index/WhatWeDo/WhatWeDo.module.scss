@@ -2,10 +2,11 @@
 .wrapper{
   display: grid;
   grid-auto-columns: 1fr; 
-  grid-template-columns: 2fr 3fr; 
+  grid-template-columns: 1.5fr 4fr; 
   gap: 5px 30px; 
   grid-template-areas: 
     "title cards";
+
 
   .title{
     @include subtitle;
@@ -24,15 +25,23 @@
     display: flex;
     flex-direction: column;
 
-    .s1, .s2, .s3{
+    .card{
       display: grid;
       grid-auto-columns: 1fr; 
       grid-template-columns: 1fr 3fr;
-      grid-template-rows: 1fr 3fr;
+      grid-template-rows: auto;
       gap: 5px 20px; 
       grid-template-areas: 
-        "img c1"
-        "img c2";
+        "img subtitle"
+        "img content";
+
+        @media(max-width: 480px){
+          grid-template-columns: 1fr;
+          grid-template-areas: 
+          "subtitle"
+          "img"
+          "content";
+        }
       
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       
@@ -40,18 +49,39 @@
 
       .img{
         grid-area: img;
-
+        
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media(max-width: 480px){
+          margin: 10px 0;
+        }
+
+        img{
+          object-fit: cover;
+          // max-width: 100%;
+          // height: 100%;
+          vertical-align: middle;
+          width: 100px;
+          
+        }
+        
       }
-      .c1{
-        grid-area: c1;
+      .subtitle{
+        grid-area: subtitle;
         @include subtitle2;
+        @media(max-width: 480px){
+          text-align: center;
+        }
       }
-      .c2{
-        grid-area: c2;
+      .content{
+        grid-area: content;
         @include content;
+        hr{
+          margin: 5px;
+          visibility: hidden;
+        }
       }
     }
   }
