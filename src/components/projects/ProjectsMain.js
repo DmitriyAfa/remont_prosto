@@ -14,10 +14,10 @@ export const ProjectsMain = () => {
     />
   ));
   return (
-    <div className={styles.wrapper}>
+    <main className={styles.wrapper}>
       <PageLayout header={"Проекты"} to={"/"} toContent="На главную">
         {cards}
       </PageLayout>
-    </div>
+    </main>
   );
 };

@@ -4,14 +4,16 @@ import { FooterApp } from "../footer/FooterApp/FooterApp";
 import { IndexPage } from "../../pages";
 import { ProjectsPage } from "../../pages/projects";
 import { ProjectGallery } from "../projects/ProjectGallery/ProjectGallery";
+import { AboutPage } from "../../pages/about";
 function App() {
   return (
     <>
       <HeaderApp />
       <Routes>
-        <Route path="/" element={<IndexPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        {/* <Route path="/" element={<IndexPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/projects/:id" element={<ProjectGallery />} />
+        <Route path="/projects/:id" element={<ProjectGallery />} /> */}
       </Routes>
       <FooterApp />
     </>

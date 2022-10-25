@@ -1,0 +1,53 @@
+@import '../../../assets/styles/styles.scss';
+.wrapper{
+  display: grid;
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 2fr 3fr; 
+  gap: 5px 20px; 
+  grid-template-areas: 
+    "steps content";
+
+    @media(max-width: 480px){
+      display: flex;
+      flex-direction: column;
+    }
+  .steps{
+    grid-area: steps;
+  }  
+
+  .content {
+    display: flex;
+    position: relative;
+    grid-area: content;
+    @include content;
+    
+    @media(max-width: 480px){
+      flex-direction: column;
+    }
+    .action{
+      position: absolute;
+      bottom: 40px;
+      margin: 25px 0;
+
+      @media(max-width: 480px){
+        position: relative;
+        bottom: 0;
+      }
+
+      img{
+        cursor: pointer;
+      }
+      .left{
+        margin-right: 15px;
+      }
+
+      span{
+        margin-right: 20px !important;
+      }
+    }
+  }
+  
+}
+
+
+  

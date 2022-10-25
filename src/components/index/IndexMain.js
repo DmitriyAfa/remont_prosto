@@ -7,13 +7,13 @@ import FifthSectionMain from "./FifthSectionMain/FifthSectionMain";
 import SixthSectionMain from "./SixthSectionMain/SixthSectionMain";
 export const IndexMain = () => {
   return (
-    <div className={styles.wrapper}>
+    <main className={styles.wrapper}>
       <FirstSectionMain />
       <SecondSectionMain />
       <ThirdSectionMain />
       <FourthSectionMain />
       <FifthSectionMain />
       <SixthSectionMain />
-    </div>
+    </main>
   );
 };
