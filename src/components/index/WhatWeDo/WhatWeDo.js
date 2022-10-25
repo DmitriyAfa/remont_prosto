@@ -1,9 +1,5 @@
 import styles from "./WhatWeDo.module.scss";
 import SectionLayout from "../../SectionLayout/SectionLayout";
-import svgHouse from "../../../assets/image/icons/house.svg";
-import img1 from "../../../assets/image/SecondSectionMain/1.png";
-import img2 from "../../../assets/image/SecondSectionMain/2.png";
-import img3 from "../../../assets/image/SecondSectionMain/3.png";
 
 export const WhatWeDo = ({ data }) => {
   const { header, title, cards } = data;
