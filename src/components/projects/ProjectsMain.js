@@ -1,10 +1,11 @@
 import styles from "./Projects.module.scss";
 import { PageLayout } from "../PageLayout/PageLayout";
 import { ProjectCard } from "./ProjectCard/ProjectCard";
-import { projectCardConsts } from "../../assets/constans/constans";
+
+import { projectCards } from "./consts";
 
 export const ProjectsMain = () => {
-  const cards = projectCardConsts.map((card) => (
+  const cards = projectCards.map((card) => (
     <ProjectCard
       key={card.id}
       src={card.src}
