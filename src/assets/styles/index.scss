@@ -9,7 +9,7 @@ body {
   font-family: 'Courier New' !important;
   font-style: normal !important;
   font-weight: 400 !important;
-  font-size: 12px !important;
+  font-size: 14px !important;
   line-height: 160% !important;
   color: #E5E5E5 !important;
 }
@@ -138,4 +138,8 @@ li{
 
  .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow svg{
   color: #E5E5E5;
+ }
+
+ .ant-steps-vertical > .ant-steps-item .ant-steps-item-icon {
+  cursor: pointer;
  }

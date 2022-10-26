@@ -36,8 +36,20 @@
     }
 
     .link{
-      display: contents;
+      display: block;
+      position: relative;
+      width: 141px;
       color: #DFD1A7 !important;
+      &::after{
+        content: "";
+        position: absolute;
+        width: 55.5px;
+        height: 13px;
+        background-image: url('../../../assets/image/FourthSectionMain/ArrowRight.png');
+        background-repeat: no-repeat;
+        top: 4px;
+        margin-left: 5px;
+      }
     }
   }
 }

@@ -1,16 +1,16 @@
 import { useState } from "react";
 import imgArrowLeft from "../../../assets/image/FourthSectionMain/ArrowLeft.png";
 import imgArrowRight from "../../../assets/image/FourthSectionMain/ArrowRight.png";
-import styles from "./FourthSectionMain.module.scss";
+import styles from "./HowWeWork.module.scss";
 import SectionLayout from "../../SectionLayout/SectionLayout";
 import "antd/dist/antd.css";
 import { Steps } from "antd";
-import { fourthSectionMainConsts } from "../../../assets/constans/constans";
+import { howWeWork } from "../consts";
 const { Step } = Steps;
 
-const { steps } = fourthSectionMainConsts;
+const { steps } = howWeWork;
 
-const FourthSectionMain = () => {
+export const HowWeWork = () => {
   const [current, setCurrent] = useState(0);
 
   const next = () => {
@@ -29,8 +29,8 @@ const FourthSectionMain = () => {
       <div className={styles.wrapper}>
         <div className={styles.steps}>
           <Steps current={current} direction="vertical">
-            {steps.map((item) => (
-              <Step key={item.title} title={item.title} />
+            {steps.map(({ id, title }) => (
+              <Step onClick={() => setCurrent(id)} key={id} title={title} />
             ))}
           </Steps>
         </div>
@@ -59,5 +59,3 @@ const FourthSectionMain = () => {
     </SectionLayout>
   );
 };
-
-export default FourthSectionMain;

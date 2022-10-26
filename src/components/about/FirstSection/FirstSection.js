@@ -1,5 +1,5 @@
 import styles from "./FirstSection.module.scss";
-import image from "../../../assets/image/projects/0/kitchen.jpg";
+import image from "../../../assets/image/projects/0/a2.jpg";
 const FirstSection = () => {
   return (
     <section className={styles.wrapper}>

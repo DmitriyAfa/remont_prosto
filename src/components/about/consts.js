@@ -96,12 +96,5 @@ export const benefitsSection = {
       `,
       id: 14,
     },
-    {
-      subtitle: "Любой вид расчёта",
-      content: `
-      Наличный, безналичный.
-      `,
-      id: 15,
-    },
   ],
 };
