@@ -5,6 +5,7 @@ import { IndexPage } from "../../pages";
 import { ProjectsPage } from "../../pages/projects";
 import { ProjectGallery } from "../projects/ProjectGallery/ProjectGallery";
 import { AboutPage } from "../../pages/about";
+import { ContactsPage } from "../../pages/contacts";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/:id" element={<ProjectGallery />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/contacts" element={<ContactsPage />} />
       </Routes>
       <FooterApp />
     </>
