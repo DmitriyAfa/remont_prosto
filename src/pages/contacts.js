@@ -1,5 +1,5 @@
 import { Contacts } from "../components/contacts/Contacts";
-import { benefitsSection } from "../components/about/consts";
+import { contactsPage } from "../components/contacts/consts";
 export function ContactsPage() {
-  return <Contacts data={benefitsSection} />;
+  return <Contacts data={contactsPage} />;
 }
