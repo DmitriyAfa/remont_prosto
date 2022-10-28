@@ -1,3 +1,4 @@
+import { Image } from "antd";
 import styles from "./GalleryLayout.module.scss";
 
 export const GalleryLayout = ({ images }) => {
@@ -7,7 +8,7 @@ export const GalleryLayout = ({ images }) => {
         images.map(({ src }) => {
           return (
             <li key={src} className={styles.item}>
-              <img src={src} />
+              <Image src={src} />
             </li>
           );
         })}
