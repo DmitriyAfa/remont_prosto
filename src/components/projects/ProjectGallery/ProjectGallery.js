@@ -18,7 +18,7 @@ export const ProjectGallery = () => {
   return (
     <div className={styles.wrapper}>
       <PageLayout
-        isGallery={true}
+        // isGallery={true}
         header={header}
         to={"/projects"}
         toContent="К проектам"
