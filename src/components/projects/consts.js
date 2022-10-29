@@ -121,327 +121,428 @@ import aleks1Img10 from "../../assets/image/projects/7/10.jpeg";
 const aleksCards = [
   {
     src: aleksImg1,
+    id: 1,
   },
   {
     src: aleksImg2,
+    id: 2,
   },
   {
     src: aleksImg3,
+    id: 3,
   },
   {
     src: aleksImg4,
+    id: 4,
   },
 ];
 
 const aleks1Cards = [
   {
     src: aleks1Img1,
+    id: 1,
   },
   {
     src: aleks1Img2,
+    id: 2,
   },
   {
     src: aleks1Img3,
+    id: 3,
   },
   {
     src: aleks1Img4,
+    id: 4,
   },
   {
     src: aleks1Img5,
+    id: 5,
   },
   {
     src: aleks1Img6,
+    id: 6,
   },
   {
     src: aleks1Img7,
+    id: 7,
   },
   {
     src: aleks1Img8,
+    id: 8,
   },
   {
     src: aleks1Img9,
+    id: 9,
   },
   {
     src: aleks1Img10,
+    id: 10,
   },
 ];
 
 const cleverCards = [
   {
     src: cleverImg1,
+    id: 1,
   },
   {
     src: cleverImg2,
+    id: 2,
   },
   {
     src: cleverImg3,
+    id: 3,
   },
   {
     src: cleverImg4,
+    id: 4,
   },
   {
     src: cleverImg5,
+    id: 5,
   },
   {
     src: cleverImg6,
+    id: 6,
   },
   {
     src: cleverImg7,
+    id: 7,
   },
   {
     src: cleverImg8,
+    id: 8,
   },
   {
     src: cleverImg9,
+    id: 9,
   },
   {
     src: cleverImg10,
+    id: 10,
   },
   {
     src: cleverImg11,
+    id: 11,
   },
   {
     src: cleverImg12,
+    id: 12,
   },
   {
     src: cleverImg13,
+    id: 13,
   },
 ];
 
 const olhCards = [
   {
     src: olhImg1,
+    id: 1,
   },
   {
     src: olhImg2,
+    id: 2,
   },
   {
     src: olhImg3,
+    id: 3,
   },
   {
     src: olhImg4,
+    id: 4,
   },
   {
     src: olhImg5,
+    id: 5,
   },
 ];
 
 const ekatCards = [
   {
     src: ekatImg1,
+    id: 1,
   },
   {
     src: ekatImg2,
+    id: 2,
   },
   {
     src: ekatImg3,
+    id: 3,
   },
   {
     src: ekatImg4,
+    id: 4,
   },
   {
     src: ekatImg5,
+    id: 5,
   },
   {
     src: ekatImg6,
+    id: 6,
   },
   {
     src: ekatImg7,
+    id: 7,
   },
   {
     src: ekatImg8,
+    id: 8,
   },
 ];
 
 const malivichCards = [
   {
     src: malevichImg1,
+    id: 1,
   },
   {
     src: malevichImg2,
+    id: 2,
   },
   {
     src: malevichImg3,
+    id: 3,
   },
   {
     src: malevichImg4,
+    id: 4,
   },
   {
     src: malevichImg5,
+    id: 5,
   },
   {
     src: malevichImg6,
+    id: 6,
   },
   {
     src: malevichImg7,
+    id: 7,
   },
 ];
 
 const makarovskiyCards = [
   {
     src: imgA1,
+    id: 1,
   },
   {
     src: imgB1,
+    id: 2,
   },
   {
     src: imgA2,
+    id: 3,
   },
   {
     src: imgA21,
+    id: 4,
   },
   {
     src: imgA22,
+    id: 5,
   },
   {
     src: imgB2,
+    id: 6,
   },
   {
     src: img3,
+    id: 7,
   },
   {
     src: img4,
+    id: 8,
   },
   {
     src: img5,
+    id: 9,
   },
   {
     src: img6,
+    id: 10,
   },
   {
     src: img7,
+    id: 11,
   },
   {
     src: img8,
+    id: 12,
   },
   {
     src: imgArka,
+    id: 13,
   },
   {
     src: imgHall,
+    id: 14,
   },
   {
     src: imgHall1,
+    id: 15,
   },
   {
     src: imgHall2,
+    id: 16,
   },
   {
     src: imgDush,
+    id: 17,
   },
   {
     src: imgDush1,
+    id: 18,
   },
   {
     src: imgKitchen,
+    id: 19,
   },
   {
     src: imgKoridor,
+    id: 20,
   },
   {
     src: imgLustra,
+    id: 21,
   },
   {
     src: imgPavlin,
+    id: 22,
   },
   {
     src: imgRoom,
+    id: 23,
   },
   {
     src: imgRoom2,
+    id: 24,
   },
 ];
 
 const moskovskayaCards = [
   {
     src: moskImg3,
+    id: 1,
   },
   {
     src: moskImg31,
+    id: 2,
   },
   {
     src: moskImg32,
+    id: 3,
   },
   {
     src: moskImg33,
+    id: 4,
   },
   {
     src: moskImg34,
+    id: 5,
   },
   {
     src: moskImg35,
+    id: 6,
   },
   {
     src: moskImg36,
+    id: 7,
   },
   {
     src: moskImg37,
+    id: 8,
   },
   {
     src: moskImg38,
+    id: 9,
   },
   {
     src: moskImg4,
+    id: 10,
   },
   {
     src: moskImg1,
+    id: 11,
   },
   {
     src: moskImg12,
+    id: 12,
   },
   {
     src: moskImg13,
+    id: 13,
   },
   {
     src: moskImg14,
+    id: 14,
   },
   {
     src: moskImg15,
+    id: 15,
   },
   {
     src: moskImg16,
+    id: 16,
   },
   {
     src: moskImg17,
+    id: 17,
   },
   {
     src: moskImg19,
+    id: 18,
   },
   {
     src: moskImg2,
+    id: 19,
   },
   {
     src: moskImg21,
+    id: 20,
   },
   {
     src: moskImg22,
+    id: 21,
   },
   {
     src: moskImg23,
+    id: 22,
   },
   {
     src: moskImg24,
+    id: 23,
   },
   {
     src: moskImg25,
+    id: 24,
   },
   {
     src: moskImg26,
+    id: 25,
   },
   {
     src: moskImg27,
+    id: 26,
   },
   {
     src: moskImg28,
+    id: 27,
   },
   {
     src: moskImg29,
+    id: 28,
   },
   {
     src: moskImg51,
+    id: 29,
   },
   {
     src: moskImg5,
+    id: 30,
   },
 ];
 
