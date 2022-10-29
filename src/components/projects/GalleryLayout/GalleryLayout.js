@@ -5,10 +5,11 @@ export const GalleryLayout = ({ images }) => {
   return (
     <ul className={styles.gallery}>
       {images &&
-        images.map(({ src }) => {
+        images.map(({ src, id }) => {
           return (
-            <li key={src} className={styles.item}>
+            <li key={id} className={styles.item}>
               <Image src={src} />
+              <h3>{id}</h3>
             </li>
           );
         })}
