@@ -7,6 +7,7 @@
   grid-template-areas: 
     "title cards";
   padding-top: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   .title{
     @include subtitle;
 
@@ -15,28 +16,23 @@
     }
   }
   
-  @media(max-width: 768px){
+  @media(max-width: 480px){
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .cards{
+    grid-area: cards;
     display: flex;
-    flex-direction: column;
+
+    .icon{
+      margin-right: 25px;
+    }
 
     .card{
-      
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      
       margin-bottom: 25px;
-      .subtitle{
-        grid-area: c1;
-        @include subtitle2;
-      }
-      .content{
-        grid-area: c2;
-        @include content;
-      }
+      @include subtitle2;
     }
   }
 

@@ -14,8 +14,8 @@ const HeaderNavMain = () => {
             className={styles.icon}
             src={icon}
             alt="phone"
-            width={13}
-            height={13}
+            width={20}
+            height={20}
           />
           <p>+7 (495) 755-02-29</p>
         </span>

@@ -1,3 +1,4 @@
+@import '../../../assets/styles/styles.scss';
 .HeaderNavMain {
   display: flex;
   align-items: center;
@@ -26,6 +27,7 @@
       "nav nav"; 
 
       height: 320px;
+      margin-bottom: 25px;
   }
   .logo{
     font-family: 'Montserrat';
@@ -65,6 +67,7 @@
     p{
       margin-left: 10px;
       margin-bottom: 0;
+      @include subtitle2;
     }
   }
 }
