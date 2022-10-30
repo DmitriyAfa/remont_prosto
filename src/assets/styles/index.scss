@@ -36,8 +36,8 @@ h1{
 h2{
   font-family: 'Montserrat', sans-serif !important;
   font-style: normal !important;
-  font-weight: 500 !important;
-  font-size: 18px !important;
+  font-weight: 700 !important;
+  font-size: 22x !important;
   line-height: 120% !important;
 
   color: #F2F2F2 !important;
@@ -46,7 +46,7 @@ h3{
 font-family: 'Courier Prime', monospace !important;
 font-style: normal !important;
 font-weight: 700 !important;
-font-size: 18px !important;
+font-size: 20px !important;
 line-height: 140% !important;
 }
 h4{
@@ -143,3 +143,7 @@ li{
  .ant-steps-vertical > .ant-steps-item .ant-steps-item-icon {
   cursor: pointer;
  }
+
+.ant-image{
+  height: 100%;
+}

@@ -472,30 +472,30 @@ const moskovskayaCards = [
     src: moskImg12,
     id: 12,
   },
-  {
-    src: moskImg13,
-    id: 13,
-  },
+  // {
+  //   src: moskImg13,
+  //   id: 13,
+  // },
   {
     src: moskImg14,
     id: 14,
   },
-  {
-    src: moskImg15,
-    id: 15,
-  },
+  // {
+  //   src: moskImg15,
+  //   id: 15,
+  // },
   {
     src: moskImg16,
     id: 16,
   },
-  {
-    src: moskImg17,
-    id: 17,
-  },
-  {
-    src: moskImg19,
-    id: 18,
-  },
+  // {
+  //   src: moskImg17,
+  //   id: 17,
+  // },
+  // {
+  //   src: moskImg19,
+  //   id: 18,
+  // },
   {
     src: moskImg2,
     id: 19,
@@ -512,14 +512,14 @@ const moskovskayaCards = [
     src: moskImg23,
     id: 22,
   },
-  {
-    src: moskImg24,
-    id: 23,
-  },
-  {
-    src: moskImg25,
-    id: 24,
-  },
+  // {
+  //   src: moskImg24,
+  //   id: 23,
+  // },
+  // {
+  //   src: moskImg25,
+  //   id: 24,
+  // },
   {
     src: moskImg26,
     id: 25,
@@ -540,10 +540,10 @@ const moskovskayaCards = [
     src: moskImg51,
     id: 29,
   },
-  {
-    src: moskImg5,
-    id: 30,
-  },
+  // {
+  //   src: moskImg5,
+  //   id: 30,
+  // },
 ];
 
 export const projectCards = [

@@ -8,7 +8,7 @@
   }
 
   @media (max-width: 1024px) {
-    width: 450px;
+    width: 100%;
   }
 
   @media (max-width: 480px) {
@@ -63,6 +63,9 @@
       transition: .5s color ease-in-out;
 
       margin-right: 37px;
+      @media (max-width: 520px){
+        margin-right: 22px;
+      }
       @media (max-width: 480px) {
         width: 100%;
         margin: 15px 0;

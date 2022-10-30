@@ -1,8 +1,8 @@
-@import '../../../assets//styles/styles.scss';
+@import '../../../assets/styles/styles.scss';
 .footer {
   display: grid;
   grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 100px;
   gap: 5px 10px; 
   grid-template-areas: 
@@ -60,6 +60,7 @@
       p{
         margin-left: 10px;
         margin-bottom: 0;
+        @include subtitle2;
       }
     }
   }

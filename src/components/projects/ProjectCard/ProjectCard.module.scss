@@ -31,9 +31,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    h3{
-      @include subtitleImportant2
+    
+    div{
+      h3{
+        @include subtitleImportant2
+      }
+      p{
+        @include content;
+      }
     }
+
 
     .link{
       display: block;
