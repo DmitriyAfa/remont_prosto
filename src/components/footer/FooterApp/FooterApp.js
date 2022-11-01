@@ -46,7 +46,7 @@ export const FooterApp = () => {
       <div className={styles.bottom}>
         <p className={styles.content}>Ремонт просто.</p>
         <p className={styles.content}>
-          Все права защищены 2021. Ремонт с 2015 года.
+          Все права защищены 2022. Ремонт с 2012 года.
         </p>
       </div>
     </footer>
