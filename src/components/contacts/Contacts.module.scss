@@ -1,40 +1,32 @@
 @import '../../assets/styles/styles.scss';
 .wrapper{
-  display: grid;
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 2fr 4fr; 
-  gap: 5px 0; 
-  grid-template-areas: 
-    "title cards";
+  display: flex;
+  flex-direction: column;
   padding-top: 60px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  .title{
-    @include subtitle;
-
-    @media(max-width: 768px){
-      margin-bottom: 65px;
+  .phone{
+    font-size: 32px;
+    font-weight: 700;
+    @media(max-width: 400px){
+      font-size: 26px;
     }
   }
-  
-  @media(max-width: 480px){
+  .title{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    @include subtitle;
   }
-
+  
   .cards{
     grid-area: cards;
     display: flex;
+    justify-content: space-around;
 
-    .icon{
-      margin-right: 25px;
-    }
-
+  }
     .card{
-      margin-bottom: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       @include subtitle2;
     }
-  }
-
 
 }
