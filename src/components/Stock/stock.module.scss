@@ -1,0 +1,57 @@
+@import '../../assets/styles/styles.scss';
+.cards{
+    display: flex;
+    flex-direction: column;
+
+    .card{
+      display: grid;
+      grid-auto-columns: 1fr; 
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: auto;
+      gap: 5px 20px; 
+      grid-template-areas: 
+        "img subtitle"
+        "img content";
+
+        @media(max-width: 480px){
+          grid-template-columns: 1fr;
+          grid-template-areas: 
+          "subtitle"
+          "img"
+          "content";
+        }
+      
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      
+      margin-bottom: 25px;
+
+      .img{
+        grid-area: img;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media(max-width: 480px){
+          margin: 10px 0;
+        }
+
+        img{
+          object-fit: cover;
+          // max-width: 100%;
+          // height: 100%;
+          vertical-align: middle;
+          width: 100px;
+          
+        }
+        
+      }
+      .subtitle{
+        grid-area: subtitle;
+        @include subtitle2;
+        @media(max-width: 480px){
+          text-align: center;
+        }
+      }
+    }
+  }
