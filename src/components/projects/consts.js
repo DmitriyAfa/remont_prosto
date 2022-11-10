@@ -33,19 +33,13 @@ import imgRoom2 from "../../assets/image/projects/0/room2.jpg";
 
 import moskImg1 from "../../assets/image/projects/1/1.jpg";
 import moskImg12 from "../../assets/image/projects/1/12.jpg";
-import moskImg13 from "../../assets/image/projects/1/13.jpg";
 import moskImg14 from "../../assets/image/projects/1/14.jpg";
-import moskImg15 from "../../assets/image/projects/1/15.jpg";
 import moskImg16 from "../../assets/image/projects/1/16.jpg";
-import moskImg17 from "../../assets/image/projects/1/17.jpg";
-import moskImg19 from "../../assets/image/projects/1/19.jpg";
 
 import moskImg2 from "../../assets/image/projects/1/2.jpg";
 import moskImg21 from "../../assets/image/projects/1/21.jpg";
 import moskImg22 from "../../assets/image/projects/1/22.jpg";
 import moskImg23 from "../../assets/image/projects/1/23.jpg";
-import moskImg24 from "../../assets/image/projects/1/24.jpg";
-import moskImg25 from "../../assets/image/projects/1/25.jpg";
 import moskImg26 from "../../assets/image/projects/1/26.jpg";
 import moskImg27 from "../../assets/image/projects/1/27.jpg";
 import moskImg28 from "../../assets/image/projects/1/28.jpg";
@@ -62,7 +56,6 @@ import moskImg37 from "../../assets/image/projects/1/37.jpg";
 import moskImg38 from "../../assets/image/projects/1/38.jpg";
 
 import moskImg4 from "../../assets/image/projects/1/4.jpg";
-import moskImg5 from "../../assets/image/projects/1/5.jpg";
 import moskImg51 from "../../assets/image/projects/1/51.jpg";
 
 import malevichImg1 from "../../assets/image/projects/2/1.jpeg";
@@ -472,30 +465,14 @@ const moskovskayaCards = [
     src: moskImg12,
     id: 12,
   },
-  // {
-  //   src: moskImg13,
-  //   id: 13,
-  // },
   {
     src: moskImg14,
     id: 14,
   },
-  // {
-  //   src: moskImg15,
-  //   id: 15,
-  // },
   {
     src: moskImg16,
     id: 16,
   },
-  // {
-  //   src: moskImg17,
-  //   id: 17,
-  // },
-  // {
-  //   src: moskImg19,
-  //   id: 18,
-  // },
   {
     src: moskImg2,
     id: 19,
@@ -512,14 +489,6 @@ const moskovskayaCards = [
     src: moskImg23,
     id: 22,
   },
-  // {
-  //   src: moskImg24,
-  //   id: 23,
-  // },
-  // {
-  //   src: moskImg25,
-  //   id: 24,
-  // },
   {
     src: moskImg26,
     id: 25,
@@ -540,10 +509,6 @@ const moskovskayaCards = [
     src: moskImg51,
     id: 29,
   },
-  // {
-  //   src: moskImg5,
-  //   id: 30,
-  // },
 ];
 
 export const projectCards = [

@@ -44,3 +44,6 @@ export const fourthSectionMainConsts = {
     },
   ],
 };
+
+export const URL_VK = "https://vk.com/remontprostoekb";
+export const URL_TG = "";
