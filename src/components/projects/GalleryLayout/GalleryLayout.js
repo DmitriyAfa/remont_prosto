@@ -9,7 +9,6 @@ export const GalleryLayout = ({ images }) => {
           return (
             <li key={id} className={styles.item}>
               <Image src={src} />
-              <h3>{id}</h3>
             </li>
           );
         })}

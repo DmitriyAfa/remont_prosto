@@ -5,6 +5,7 @@ import qrImg from "./qr.jpg";
 import icon from "../../assets/image/icons/phone-call.png";
 import iconVK from "../../assets/image/icons/vk.png";
 import iconT from "../../assets/image/icons/telegram.png";
+import { URL_VK } from "../../assets/constans/constans";
 export const Contacts = () => {
   return (
     <PageLayout header="Контакты" to="/" toContent="На главную">
@@ -20,7 +21,7 @@ export const Contacts = () => {
           <ul className={styles.card}>
             <p className={styles.title}>Мы вконтакте</p>
             <li className={styles.icon}>
-              <a href="https://vk.com/" target="_blank">
+              <a href={URL_VK} target="_blank">
                 <img width={35} height={35} src={iconVK} alt="vk" />
               </a>
             </li>
