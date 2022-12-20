@@ -17,7 +17,7 @@ const HeaderNavMain = () => {
             width={20}
             height={20}
           />
-          <p>+7 (495) 755-02-29</p>
+          <p>+7 999 999 999</p>
         </span>
       </div>
     </>
