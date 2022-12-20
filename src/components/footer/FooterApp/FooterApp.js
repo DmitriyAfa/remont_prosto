@@ -19,7 +19,7 @@ export const FooterApp = () => {
             width={20}
             height={20}
           />
-          <p>+7 (495) 755-02-29</p>
+          <p>+7 999 999 999</p>
         </span>
       </div>
       <FooterNavbar />
@@ -45,7 +45,9 @@ export const FooterApp = () => {
         </a>
       </div>
       <div className={styles.bottom}>
-        <p className={styles.content}>Ремонт просто.</p>
+        <p style={{ marginRight: "5px" }} className={styles.content}>
+          Ремонт просто.
+        </p>
         <p className={styles.content}>
           Все права защищены 2022. Ремонт с 2012 года.
         </p>
